@@ -1,14 +1,16 @@
 <ion-list>
-    <ion-list-header>Products</ion-list-header>
-    <ion-item *ngFor="let product of products" title="{{ product.name}} details">
-        <ion-label class="ion-text-wrap">
-            <ion-text color="primary">
-                <h3>{{ product.name }}</h3>
-            </ion-text>
-            <p *ngIf="product.description">{{ product.description }}</p>
-            <app-product-alert [product]="product" (notify)="onNotify()"></app-product-alert>
-        </ion-label>
-        <ion-button (click)="share()" slot="end">Share</ion-button>
-    </ion-item>
+  <ion-list-header>Products</ion-list-header>
+  <ion-item *ngFor="let product of products" title="{{ product.name }} details">
+    <ion-label class="ion-text-wrap">
+      <ion-text color="primary">
+        <h3>{{ product.name }}</h3>
+      </ion-text>
+      <p *ngIf="product.description">{{ product.description }}</p>
+      <app-product-alert
+        [product]="product"
+        (notify)="onNotify()"
+      ></app-product-alert>
+    </ion-label>
+    <ion-button (click)="share()" slot="end">Share</ion-button>
+  </ion-item>
 </ion-list>
-

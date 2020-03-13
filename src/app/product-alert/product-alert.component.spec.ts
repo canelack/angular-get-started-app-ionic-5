@@ -9,7 +9,7 @@ describe('ProductAlertComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductAlertComponent ],
+      declarations: [ProductAlertComponent],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
