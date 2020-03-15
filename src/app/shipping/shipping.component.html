@@ -1,0 +1,9 @@
+<ion-content class="ion-padding">
+  <h2>Shipping prices</h2>
+  <ion-list>
+    <ion-item *ngFor="let shipping of shippingCosts | async">
+      <ion-label>{{ shipping.type }}</ion-label>
+      {{ shipping.price | currency }}
+    </ion-item>
+  </ion-list>
+</ion-content>
