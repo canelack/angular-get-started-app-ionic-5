@@ -9,4 +9,17 @@
       {{ item.price | currency }}
     </ion-item>
   </ion-list>
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input id="name" type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input id="address" type="text" formControlName="address"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button class="button" type="submit">Purchase</ion-button>
+  </form>
 </ion-content>
