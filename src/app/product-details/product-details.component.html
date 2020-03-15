@@ -1,0 +1,13 @@
+<ion-content class="ion-padding">
+  <h2>Product Details</h2>
+  <ion-card *ngIf="product">
+    <ion-card-header>
+      <ion-card-subtitle>{{ product.price | currency }}</ion-card-subtitle>
+      <ion-card-title>{{ product.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ product.description }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

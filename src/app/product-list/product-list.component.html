@@ -1,9 +1,9 @@
 <ion-list>
   <ion-list-header>Products</ion-list-header>
-  <ion-item *ngFor="let product of products" title="{{ product.name }} details">
+  <ion-item *ngFor="let product of products; index as productId" title="{{ product.name }} details">
     <ion-label class="ion-text-wrap">
       <ion-text color="primary">
-        <h3>{{ product.name }}</h3>
+        <a [routerLink]="['/products', productId]">{{ product.name }}</a>
       </ion-text>
       <p *ngIf="product.description">{{ product.description }}</p>
       <app-product-alert
