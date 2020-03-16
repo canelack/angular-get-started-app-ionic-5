@@ -1,8 +1,8 @@
 {
-  "name": "shoppingTuto",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "My Store",
+  "version": "1.0.0",
+  "author": "Fabien",
+  "homepage": "https://github.com/fabinfo33/angular-get-started-app-ionic-5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
