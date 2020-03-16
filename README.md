@@ -16,3 +16,7 @@ This project is an adaptation of the [Angular's "get stated" demo app](https://a
 
  * [Angular](https://angular.io)
  * [Ionic 5](https://ionicframework.com/)
+
+## Sceenshot
+
+![Android Store](/resources/screenshots/screenshot_android.png)
